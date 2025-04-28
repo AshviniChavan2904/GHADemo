@@ -1,7 +1,7 @@
 {
   "name": "my-react-app",
   "version": "0.1.0",
-  "homepage": "https://AshviniChavan2904.github.io/GHADemo/my-react-app",
+  "homepage": "https://AshviniChavan2904.github.io/GHADemo/my-react-app/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
