@@ -28,7 +28,7 @@ jobs:
 
       - name: Set Git user name and email
         run: |
-          git config --global user.name "ashvinichavan2904"
+          git config --global user.name "Ashvini Chavan"
           git config --global user.email "ashvinichavan1998@gmail.com"
         working-directory: ./my-react-app  # Run in the `my-react-app` directory        
 
