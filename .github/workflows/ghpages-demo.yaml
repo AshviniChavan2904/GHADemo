@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - main  # Trigger this action when there is a push to the `main` branch
+    workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 
 jobs:
   deploy:
