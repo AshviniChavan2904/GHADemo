@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: '16'  # Use Node.js 16 (you can adjust this if necessary)
 
+      - name: Navigate to project directory
+        run: cd my-react-app  # Use the directory containing your package.json (if in a subdirectory)
+
       - name: Install dependencies
         run: npm install
 
