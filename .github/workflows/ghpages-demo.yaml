@@ -18,18 +18,18 @@ jobs:
         with:
           node-version: '16'  # Use Node.js 16 (you can adjust this if necessary)
 
-      - name: Navigate to project directory
-        run: cd my-react-app  # Use the directory containing your package.json (if in a subdirectory)
-
       - name: Install dependencies
         run: npm install
+        working-directory: ./my-react-app
 
       - name: Build the app
         run: npm run build
+        working-directory: ./my-react-app
 
       - name: Deploy to GitHub Pages
         run: |
           npm install gh-pages --save-dev
           npm run deploy
+        working-directory: ./my-react-app
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}  # GitHub token for authentication
